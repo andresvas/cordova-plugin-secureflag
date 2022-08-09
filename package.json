@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-secureflag",
+  "version": "1.0.0",
+  "description": "secure flag when app is background",
+  "cordova": {
+    "id": "cordova-plugin-secureflag",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresvas/cordova-plugin-secureflag.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "avasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresvas/cordova-plugin-secureflag/issues"
+  },
+  "homepage": "https://github.com/andresvas/cordova-plugin-secureflag#readme"
+}

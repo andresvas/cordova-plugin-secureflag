@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-secureflag"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>SecureFlag</name>
+    <js-module name="SecureFlag" src="www/SecureFlag.js">
+        <clobbers target="cordova.plugins.SecureFlag" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SecureFlag">
+                <param name="android-package" value="cordova.plugin.secureflag.SecureFlag" />
+                 <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/SecureFlag.java"
+            target-dir="src/cordova/plugin/secureflag" />
+    </platform>
+</plugin>
